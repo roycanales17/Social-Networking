@@ -1,2 +1,1 @@
-# Social-Networking
-I created this like facebook.  This project is built in with pure PHP code, no framework like laravel or codeigniter etc. also this project is not fully done yet but everything you want to add another function is already built in from controllers.  -> I made my own MVC.  -> Authenticated using ( PDO, CSRF TOKENS, SECURE SESSION, BRUTE FORCE PREVENTION )  -> Disable visiting server file and root folder for image and videos etc.  -> It also support mysqli.  -> Chat application peer to peer using websocket.  -> It can also upload multiple images.  I have also made this from laravel framework.
+https://youtu.be/CSXfx2zXrCw
