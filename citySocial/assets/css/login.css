@@ -1,0 +1,277 @@
+
+/* Login navbar */
+
+
+.loginBtn{
+    border: 1px solid #364971;
+    color: white;
+    background-color: rgba(95,120,171,0.6);
+    margin-left: 15px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.loginBtn:hover{
+    color: white;
+    text-decoration: none;
+    background-color: #7187b4;
+    border: 1px solid #7187b4;
+}
+
+.loginInput{
+    height: 25px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.labelLogin{
+    color: white;
+    font-size: 12px;
+    margin-bottom: -10px;
+}
+
+.forgotAccount a{
+    font-size: 11px;
+    color: rgba(242,242,242,0.6);
+}
+
+.navbar {
+    background-color: rgb(78,105,162);
+    background: -moz-linear-gradient(top, rgba(78,105,162,1) 0%, rgba(59,88,152,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(78,105,162,1)), color-stop(100%, rgba(59,88,152,1)));
+    background: -webkit-linear-gradient(top, rgba(78,105,162,1) 0%, rgba(59,88,152,1) 100%);
+    background: -o-linear-gradient(top, rgba(78,105,162,1) 0%, rgba(59,88,152,1) 100%);
+    background: -ms-linear-gradient(top, rgba(78,105,162,1) 0%, rgba(59,88,152,1) 100%);
+    background: linear-gradient(to bottom, rgba(78,105,162,1) 0%, rgba(59,88,152,1) 100%);
+    border-bottom: 1px solid #3A4B7B;
+    height: auto;
+    padding: 0px 0 10px 5px; /* TOP - LEFT - BOTTOM - RIGHT */
+}
+
+#navbarNav > form > input[type='text']{
+    width: 27rem;
+}
+
+.navbar-brand{
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    display: block;
+    font-size: 35px;
+    font-family: Segoe UI;
+    height: 24px;
+    line-height: 27px;
+    letter-spacing: 2px;
+    margin: -3px 0 0 -1px;
+    padding: 0 1px 0 11px;
+    text-decoration: none;
+    /*
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+    */
+}
+
+.navbar-brand:hover{
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.nav-link{
+    margin-right: 5px;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    font-size: 13px;
+    line-height: 20px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #FFFFFF;
+}
+
+.nav-link:hover{
+    margin-right: 3.6px;
+    background-color: #425691;
+    color: #FFFFFF;
+    border: 1px solid rgba(100, 100, 100, 0.4);
+    border-bottom-width: 0;
+    border-radius: 5px;
+    text-shadow: 0 0 transparent;
+    z-index: 2;
+}
+
+.dropdown-toggle{
+    padding: 3px;
+}
+
+.nav-item{
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.nav-item > .dropdown > .dropwdown-link{
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */ 
+    color: white;      
+}
+.nav-item > .dropdown > .dropwdown-link:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 990px){
+    #navbarNav > form > input[type='text']{
+        width: 100%;
+    }
+}
+@media (max-width: 767px){
+    .navbar-brand{
+        font-size: 30px;
+    }
+    .nav-item{
+        margin-right: 0px;
+    }
+    .navbar{
+        padding: 10px;
+    }
+    .loginInput{
+        height: 35px;
+        min-width:100%;
+    }
+    .loginBtn{
+        margin: 0px;
+        margin-top: 20px;
+        height: 35px;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+@media (max-width: 600px){
+    .navbar-toggler{
+       margin-right: 5px;
+    }
+    .navbar-nav{
+        margin: 10px;
+        margin-top: 0px;
+    }
+    .search-form{
+        padding: 10px;
+    }
+    .dropdown-menu{
+        margin-top: 5px;
+    }
+}
+
+
+/* Dropdown animation */
+
+
+@media (min-width: 992px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+/* Login navbar */
+
+.left-bar{
+	padding-top: 10px;
+}
+.left-bar h2{
+	font-family: Segoe UI;
+	font-weight: 600;
+}
+.right-bar h1{
+	font-family: Segoe UI;
+	font-weight: 600;
+	font-size: 2.7rem;
+}
+.loginList li{
+	background: none !important;
+	border: none !important;
+	font-size: 18px;
+	margin-top: 15px;
+	display: block;
+}
+.loginList li .icons{
+	font-size: 50px;
+	vertical-align: middle;
+	color: #d0dce1;
+}
+.giveSpace{
+	margin-left: 25px;
+}
+.signUpFormSmallTag{
+	font-family: Calibri;
+	font-size: 21px;
+	font-weight: lighter;
+}
+.form-group{
+	margin-top: 10px;
+}
+.form-row{
+	padding-bottom: 5px;
+}
+.formLabel{
+	letter-spacing: 1px;
+	color: #a6a6a6;
+	font-weight: bolder;
+}
+.selectorTag{
+	margin-right: 5px;
+}
+.agreeAndTerms{
+	color: #a6a6a6;
+	font-size: 12px;
+}
+@media (max-width: 767px){
+	.left-bar h2{
+		text-align: center;
+	}
+	.loginList li{
+		text-align: center;
+	}
+	.selectorTag{
+		margin-bottom: 5px;
+	}
+	.right-bar{
+		padding-top: 30px;
+	}
+}

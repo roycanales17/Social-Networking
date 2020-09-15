@@ -1,0 +1,147 @@
+
+
+.navbar {
+    background-color: rgb(78,105,162);
+    background: -moz-linear-gradient(top, rgba(78,105,162,1) 0%, rgba(59,88,152,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(78,105,162,1)), color-stop(100%, rgba(59,88,152,1)));
+    background: -webkit-linear-gradient(top, rgba(78,105,162,1) 0%, rgba(59,88,152,1) 100%);
+    background: -o-linear-gradient(top, rgba(78,105,162,1) 0%, rgba(59,88,152,1) 100%);
+    background: -ms-linear-gradient(top, rgba(78,105,162,1) 0%, rgba(59,88,152,1) 100%);
+    background: linear-gradient(to bottom, rgba(78,105,162,1) 0%, rgba(59,88,152,1) 100%);
+    border-bottom: 1px solid #3A4B7B;
+    height: auto;
+    padding: 10px 0 10px 5px;
+}
+
+#navbarNav > form > input[type='text']{
+    width: 27rem;
+}
+
+.navbar-brand{
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    height: 24px;
+    line-height: 27px;
+    letter-spacing: 1px;
+    margin: -3px 0 0 -1px;
+    padding: 0 1px 0 11px;
+    text-decoration: none;
+    /*
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+    */
+}
+
+.navbar-brand:hover{
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.nav-link{
+    margin-right: 5px;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    font-size: 13px;
+    line-height: 20px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #FFFFFF;
+}
+
+.nav-link:hover{
+    margin-right: 3.6px;
+    background-color: #425691;
+    color: #FFFFFF;
+    border: 1px solid rgba(100, 100, 100, 0.4);
+    border-bottom-width: 0;
+    border-radius: 5px;
+    text-shadow: 0 0 transparent;
+    z-index: 2;
+}
+
+.dropdown-toggle{
+    padding: 3px;
+}
+
+.nav-item > .dropdown > .dropwdown-link{
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */ 
+    color: white;      
+}
+.nav-item > .dropdown > .dropwdown-link:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 990px){
+    #navbarNav > form > input[type='text']{
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .navbar-toggler{
+       margin-right: 5px;
+    }
+    .navbar-nav{
+        margin: 10px;
+        margin-top: 0px;
+    }
+    .search-form{
+        padding: 10px;
+    }
+    .dropdown-menu{
+        margin-top: 5px;
+    }
+}
+
+
+/* Dropdown animation */
+
+
+@media (min-width: 992px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
