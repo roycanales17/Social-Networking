@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+    Options -Indexes
+    RewriteEngine On
+    
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    RewriteCond %{HTTP_REFERER} !^http://(www\.)?localhost [NC] 
+    RewriteCond %{HTTP_REFERER} !^http://(www\.)?localhost.*$ [NC] 
+    RewriteRule \.(gif|jpg)$ - [F]
+    
+    #Hide routes sub-folder
+    RewriteRule ^login$ ./routes/login.php
+    RewriteRule ^home$ ./routes/home.php
+    RewriteRule ^profile$ ./routes/profile.php
+</IfModule>
+RewriteEngine On
